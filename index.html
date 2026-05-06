@@ -3,298 +3,282 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Audrey syril MOKOKO, Data Analyst Senior orientee finance, specialiste comptabilite, controle de gestion et audit.">
-  <title>Audrey syril MOKOKO | Data Analyst Senior</title>
+  <meta name="description" content="Les Sister’s BERNA valorise les productions agropastorales locales : agriculture, élevage, pêche, transport professionnel et livraison à domicile.">
+  <meta name="keywords" content="Les Sister’s BERNA, agropastoral, agriculture, élevage, pêche, livraison, produits locaux, Afrique">
+  <meta name="author" content="Les Sister’s BERNA">
+  <meta property="og:title" content="Les Sister’s BERNA | Produits locaux, logistique et livraison">
+  <meta property="og:description" content="Des produits agricoles, d’élevage et de pêche sélectionnés avec soin, transportés et livrés avec fiabilité.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1B5E20">
+  <title>Les Sister’s BERNA | Agropastoral local premium</title>
   <script>document.documentElement.classList.add("js");</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header" id="header">
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <header class="site-header" id="site-header">
     <nav class="nav container" aria-label="Navigation principale">
-      <a class="nav__brand" href="#accueil" aria-label="Retour a l'accueil">
-        <span class="nav__mark">AM</span>
-        <span>Audrey Syril MOKOKO</span>
+      <a class="nav__brand" href="#accueil" aria-label="Les Sister’s BERNA - Accueil">
+        <span class="nav__logo" aria-hidden="true">LS</span>
+        <span>
+          <strong>Les Sister’s BERNA</strong>
+          <small>Agropastoral local</small>
+        </span>
       </a>
-      <button class="nav__toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+
+      <button class="nav__toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Ouvrir le menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
+
       <ul class="nav__menu" id="nav-menu">
-        <li><a class="nav__link" href="#accueil">Accueil</a></li>
-        <li><a class="nav__link" href="#apropos">A propos</a></li>
-        <li><a class="nav__link" href="#competences">Competences</a></li>
-        <li><a class="nav__link" href="#projets">Projets</a></li>
-        <li><a class="nav__link nav__link--button" href="#contact">Contact</a></li>
+        <li><a class="nav__link" href="#productions">Productions</a></li>
+        <li><a class="nav__link" href="#logistique">Logistique</a></li>
+        <li><a class="nav__link" href="#livraison">Livraison</a></li>
+        <li><a class="nav__link nav__link--cta" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="hero section" id="accueil">
-      <div class="hero__grid container">
+
+  <main id="contenu">
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="hero__overlay"></div>
+      <div class="container hero__grid">
         <div class="hero__content reveal">
-          <p class="eyebrow">Finance analytics / Audit / Performance</p>
-          <h1>Data Analyst Senior</h1>
+          <p class="eyebrow">Production locale • Qualité contrôlée • Livraison fiable</p>
+          <h1 id="hero-title">Des produits agropastoraux locaux, sélectionnés avec exigence.</h1>
           <p class="hero__subtitle">
-            J'aide les directions finance a transformer leurs donnees comptables,
-            operationnelles et de controle en decisions rapides, fiables et mesurables.
+            Les Sister’s BERNA connecte les familles, commerçants et partenaires aux meilleures productions d’agriculture, d’élevage et de pêche, avec une logistique professionnelle du point d’achat jusqu’à la livraison.
           </p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="#projets">Voir mes projets</a>
-            <a class="button button--ghost" href="#contact">Me contacter</a>
+          <div class="hero__actions" aria-label="Actions principales">
+            <a class="button button--primary" href="#productions">Découvrir nos produits</a>
+            <a class="button button--secondary" href="#contact">Demander un devis</a>
           </div>
         </div>
 
-        <aside class="hero__panel reveal" aria-label="Indicateurs de performance">
-          <div class="profile-card">
-            <div class="profile-card__images" aria-label="Photos professionnelles">
-              <button class="profile-card__photo" type="button" data-image-src="2.jpg" data-image-title="Portrait professionnel en costume">
-                <img src="2.jpg" alt="Portrait professionnel en costume">
-              </button>
-              <button class="profile-card__photo" type="button" data-image-src="1.jpg" data-image-title="Portrait professionnel">
-                <img src="1.jpg" alt="Portrait professionnel">
-              </button>
-            </div>
+        <aside class="hero__trust reveal" aria-label="Indicateurs de confiance">
+          <div class="trust-card trust-card--featured">
+            <span class="trust-card__icon" aria-hidden="true">✓</span>
             <div>
-              <span class="metric-card__label">Profil senior</span>
-              <strong>Finance Data</strong>
-              <span>analyse, audit et pilotage</span>
+              <strong>Qualité suivie</strong>
+              <span>sélection rigoureuse des lots</span>
             </div>
           </div>
-          <div class="metric-card metric-card--featured">
-            <span class="metric-card__label">Impact reporting</span>
-            <strong>+38%</strong>
-            <span>delais de cloture optimises</span>
-          </div>
-          <div class="hero__chart" aria-hidden="true">
-            <span style="height: 44%"></span>
-            <span style="height: 68%"></span>
-            <span style="height: 52%"></span>
-            <span style="height: 83%"></span>
-            <span style="height: 61%"></span>
-            <span style="height: 92%"></span>
-          </div>
-          <div class="hero__panel-row">
-            <div class="metric-card">
-              <span class="metric-card__label">Tableaux de bord</span>
-              <strong>24</strong>
-              <span>KPI suivis</span>
+          <div class="trust-card">
+            <span class="trust-card__number">3</span>
+            <div>
+              <strong>Filières locales</strong>
+              <span>agriculture, élevage, pêche</span>
             </div>
-            <div class="metric-card">
-              <span class="metric-card__label">Qualite data</span>
-              <strong>97%</strong>
-              <span>fiabilite cible</span>
+          </div>
+          <div class="trust-card">
+            <span class="trust-card__number">24h</span>
+            <div>
+              <strong>Réponse rapide</strong>
+              <span>contacts clients prioritaires</span>
             </div>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="about section" id="apropos">
-      <div class="container section__grid">
-        <div class="section__intro reveal">
-          <p class="eyebrow">A propos</p>
-          <h2>Une analyse orientee decisions, pas seulement reporting.</h2>
+    <section class="section productions" id="productions" aria-labelledby="productions-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="eyebrow">Nos productions</p>
+          <h2 id="productions-title">Trois filières essentielles pour nourrir le marché local.</h2>
+          <p>Une offre claire, authentique et adaptée aux besoins des ménages, revendeurs, restaurants et partenaires institutionnels.</p>
         </div>
-        <div class="about__content reveal">
-          <p>
-            Audrey syril MOKOKO accompagne les equipes finance dans la lecture,
-            la fiabilisation et l'exploitation des donnees. Son approche combine
-            comptabilite, controle de gestion et audit pour produire des analyses
-            actionnables, comprehensibles par les metiers et robustes pour la direction.
-          </p>
-          <p>
-            De la modelisation Excel aux pipelines SQL, jusqu'aux dashboards Power BI,
-            elle construit des dispositifs de pilotage qui reduisent les zones d'ombre,
-            accelerent les arbitrages et donnent une vision claire de la performance.
-          </p>
-          <div class="about__stats">
+
+        <div class="cards-grid">
+          <article class="production-card reveal">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=900&q=80" alt="Champ agricole verdoyant au lever du jour" loading="lazy">
+            <div class="production-card__body">
+              <span class="card-kicker">Agriculture</span>
+              <h3>Produits de terre frais et traçables</h3>
+              <p>Légumes, céréales et récoltes saisonnières issus de circuits locaux, avec attention portée à la fraîcheur, au calibrage et à la régularité.</p>
+            </div>
+          </article>
+
+          <article class="production-card reveal">
+            <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=80" alt="Élevage bovin dans un pâturage naturel" loading="lazy">
+            <div class="production-card__body">
+              <span class="card-kicker">Élevage</span>
+              <h3>Élevage responsable et alimentation saine</h3>
+              <p>Approvisionnement en produits d’élevage sélectionnés auprès de producteurs fiables pour répondre aux standards de goût et de sécurité.</p>
+            </div>
+          </article>
+
+          <article class="production-card reveal">
+            <img src="https://images.unsplash.com/photo-1534766438357-2b270dbd1b40?auto=format&fit=crop&w=900&q=80" alt="Poissons frais préparés pour la vente" loading="lazy">
+            <div class="production-card__body">
+              <span class="card-kicker">Pêche</span>
+              <h3>Produits halieutiques frais et bien conservés</h3>
+              <p>Poissons et produits de pêche avec une attention particulière à la chaîne de conservation, à la disponibilité et au transport.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section logistics" id="logistique" aria-labelledby="logistics-title">
+      <div class="container logistics__grid">
+        <div class="section__header section__header--left reveal">
+          <p class="eyebrow">Logistique & transport</p>
+          <h2 id="logistics-title">Un maillon fiable entre producteurs, vendeurs et clients.</h2>
+          <p>Nous facilitons l’achat, le regroupement, le transport et la remise des produits avec une organisation pensée pour préserver la qualité.</p>
+          <a class="button button--primary" href="#contact">Planifier un achat</a>
+        </div>
+
+        <div class="logistics__panel reveal">
+          <article class="service-row">
+            <span class="service-row__icon" aria-hidden="true">🧺</span>
             <div>
-              <strong>5+</strong>
-              <span>ans en finance data</span>
+              <h3>Achat de produits</h3>
+              <p>Sourcing local, sélection des lots, confirmation des quantités et coordination avec les points d’approvisionnement.</p>
+            </div>
+          </article>
+          <article class="service-row">
+            <span class="service-row__icon" aria-hidden="true">🚚</span>
+            <div>
+              <h3>Transport professionnel</h3>
+              <p>Trajets organisés, manutention soignée et suivi de livraison pour sécuriser les produits jusqu’à destination.</p>
+            </div>
+          </article>
+
+          <div class="confidence-grid" aria-label="Éléments de confiance">
+            <div>
+              <strong>Suivi</strong>
+              <span>coordination client</span>
             </div>
             <div>
-              <strong>360</strong>
-              <span>vision audit et gestion</span>
+              <strong>Fraîcheur</strong>
+              <span>délais maîtrisés</span>
             </div>
             <div>
-              <strong>4</strong>
-              <span>outils coeur maitrises</span>
+              <strong>Fiabilité</strong>
+              <span>remise vérifiée</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="skills section" id="competences">
+    <section class="section delivery" id="livraison" aria-labelledby="delivery-title">
       <div class="container">
         <div class="section__header reveal">
-          <p class="eyebrow">Competences</p>
-          <h2>Stack analytique pour environnements finance exigeants.</h2>
+          <p class="eyebrow">Vente & livraison</p>
+          <h2 id="delivery-title">Acheter simplement, recevoir sereinement.</h2>
+          <p>Des points de vente identifiables et une livraison à domicile pensée pour réduire l’effort client et augmenter la confiance.</p>
         </div>
 
-        <div class="skills__grid">
-          <article class="skill-card reveal">
-            <div class="skill-card__icon">SQL</div>
-            <h3>SQL avance</h3>
-            <p>Requetes complexes, vues metier, optimisation et controle de coherence.</p>
-            <div class="progress" aria-label="Niveau SQL 94%">
-              <span style="width: 94%"></span>
-            </div>
+        <div class="delivery__layout">
+          <article class="delivery-card reveal">
+            <h3>Points de vente</h3>
+            <p>Retrouvez les produits disponibles selon les arrivages locaux, les saisons et les volumes réservés.</p>
+            <ul class="check-list">
+              <li>Informations claires sur les disponibilités</li>
+              <li>Prix communiqués avant confirmation</li>
+              <li>Réservations possibles pour les commandes groupées</li>
+            </ul>
           </article>
-          <article class="skill-card reveal">
-            <div class="skill-card__icon">XL</div>
-            <h3>Excel finance</h3>
-            <p>Modelisation, automatisation, tableaux de bord et analyses d'ecarts.</p>
-            <div class="progress" aria-label="Niveau Excel 92%">
-              <span style="width: 92%"></span>
-            </div>
-          </article>
-          <article class="skill-card reveal">
-            <div class="skill-card__icon">BI</div>
-            <h3>Power BI</h3>
-            <p>Data model, DAX, storytelling visuel et reporting executif.</p>
-            <div class="progress" aria-label="Niveau Power BI 90%">
-              <span style="width: 90%"></span>
-            </div>
-          </article>
-          <article class="skill-card reveal">
-            <div class="skill-card__icon">PY</div>
-            <h3>Python / pandas</h3>
-            <p>Nettoyage, rapprochements, analyses exploratoires et automatisations.</p>
-            <div class="progress" aria-label="Niveau Python 84%">
-              <span style="width: 84%"></span>
-            </div>
+
+          <article class="delivery-card delivery-card--accent reveal">
+            <h3>Livraison à domicile</h3>
+            <p>Un service pratique pour recevoir vos produits sans déplacement, avec confirmation avant expédition.</p>
+            <ul class="check-list">
+              <li>Adresse et créneau validés</li>
+              <li>Produits préparés avec soin</li>
+              <li>Remise directe au client ou au représentant</li>
+            </ul>
           </article>
         </div>
+
+        <ol class="process reveal" aria-label="Processus de commande">
+          <li>
+            <span>01</span>
+            <strong>Demande</strong>
+            <p>Vous précisez les produits, quantités et lieu de livraison.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <strong>Confirmation</strong>
+            <p>Nous validons disponibilité, prix, transport et délai.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <strong>Préparation</strong>
+            <p>Les produits sont sélectionnés, regroupés et sécurisés.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <strong>Livraison</strong>
+            <p>Votre commande est remise à l’adresse convenue.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section class="projects section" id="projets">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="eyebrow">Projets</p>
-          <h2>Cas d'usage finance construits pour mesurer, comparer et decider.</h2>
-        </div>
-
-        <div class="projects__grid">
-          <article class="project-card reveal" tabindex="0">
-            <div class="project-card__top">
-              <span>01</span>
-              <button class="project-card__button" type="button" aria-label="Voir le detail du projet Controle budgetaire">+</button>
-            </div>
-            <h3>Dashboard de controle budgetaire</h3>
-            <p>Centralisation des budgets, reels et forecasts pour analyser les ecarts par entite et centre de cout.</p>
-            <div class="project-card__tags">
-              <span>Power BI</span><span>DAX</span><span>Excel</span>
-            </div>
-            <strong>Resultat : -32% de temps de reporting mensuel.</strong>
-          </article>
-
-          <article class="project-card reveal" tabindex="0">
-            <div class="project-card__top">
-              <span>02</span>
-              <button class="project-card__button" type="button" aria-label="Voir le detail du projet Audit analytique">+</button>
-            </div>
-            <h3>Audit analytique des ecritures comptables</h3>
-            <p>Detection d'anomalies, doublons et operations atypiques sur grands volumes d'ecritures.</p>
-            <div class="project-card__tags">
-              <span>SQL</span><span>Python</span><span>pandas</span>
-            </div>
-            <strong>Resultat : 18 zones de risque identifiees en amont.</strong>
-          </article>
-
-          <article class="project-card reveal" tabindex="0">
-            <div class="project-card__top">
-              <span>03</span>
-              <button class="project-card__button" type="button" aria-label="Voir le detail du projet Tresorerie">+</button>
-            </div>
-            <h3>Modele de suivi tresorerie</h3>
-            <p>Vue consolidee des encaissements, decaissements et previsions court terme avec alertes KPI.</p>
-            <div class="project-card__tags">
-              <span>Excel</span><span>Power Query</span><span>BI</span>
-            </div>
-            <strong>Resultat : visibilite cash-flow amelioree a 12 semaines.</strong>
-          </article>
-
-          <article class="project-card reveal" tabindex="0">
-            <div class="project-card__top">
-              <span>04</span>
-              <button class="project-card__button" type="button" aria-label="Voir le detail du projet Performance marge">+</button>
-            </div>
-            <h3>Analyse de performance marge</h3>
-            <p>Segmentation produit-client, decomposition des marges et identification des leviers rentables.</p>
-            <div class="project-card__tags">
-              <span>SQL</span><span>Power BI</span><span>Finance</span>
-            </div>
-            <strong>Resultat : +11% de marge cible sur segments prioritaires.</strong>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact">
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="container contact__grid">
-        <div class="contact__content reveal">
+        <div class="contact__info reveal">
           <p class="eyebrow">Contact</p>
-          <h2>Construisons un pilotage finance plus clair.</h2>
-          <p>
-            Disponible pour missions d'analyse,comptable, controle, audit data, reporting Power BI et
-            optimisation des processus finance.
-          </p>
-          <a class="contact__email" href="mailto:mokokoaudrey@gmail.com">mokokoaudrey@gmail.com</a>
+          <h2 id="contact-title">Parlons de vos besoins en produits locaux.</h2>
+          <p>Pour une commande, une livraison, un partenariat ou un approvisionnement régulier, laissez-nous un message. L’équipe Les Sister’s BERNA vous répondra rapidement.</p>
+
+          <div class="contact-methods">
+            <a href="tel:+000000000000" aria-label="Appeler Les Sister’s BERNA">
+              <span aria-hidden="true">☎</span>
+              <div>
+                <strong>Téléphone</strong>
+                <small>+000 00 00 00 00</small>
+              </div>
+            </a>
+            <a href="https://wa.me/000000000000" target="_blank" rel="noopener" aria-label="Contacter Les Sister’s BERNA sur WhatsApp">
+              <span aria-hidden="true">✆</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <small>+000 00 00 00 00</small>
+              </div>
+            </a>
+            <div class="contact-methods__item">
+              <span aria-hidden="true">⌖</span>
+              <div>
+                <strong>Localisation</strong>
+                <small>Marché local africain</small>
+              </div>
+            </div>
+          </div>
         </div>
 
         <form class="contact-form reveal" id="contact-form" novalidate>
-          <label for="name">Nom</label>
-          <input id="name" name="name" type="text" placeholder="Votre nom" required>
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="votre mail @gmail.com" required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Decrivez votre besoin" required></textarea>
-
-          <p class="contact-form__status" id="form-status" role="status" aria-live="polite"></p>
-          <button class="button button--primary" type="submit">Envoyer le message</button>
+          <div class="form-field">
+            <label for="name">Nom complet</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Votre nom" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="exemple@email.com" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin : produits, quantités, lieu..." required></textarea>
+          </div>
+          <button class="button button--primary" type="submit">Envoyer la demande</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <p>&copy; 2026 Audrey syril MOKOKO. Tous droits reserves.</p>
-      <div class="footer__links">
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
+    <div class="container footer__content">
+      <p>© <span id="current-year"></span> Les Sister’s BERNA. Tous droits réservés.</p>
+      <a href="#accueil">Retour en haut</a>
     </div>
   </footer>
-
-  <div class="project-modal" id="project-modal" aria-hidden="true">
-    <div class="project-modal__overlay" data-close-modal></div>
-    <article class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <button class="project-modal__close" type="button" data-close-modal aria-label="Fermer">x</button>
-      <p class="eyebrow">Detail projet</p>
-      <h2 id="modal-title"></h2>
-      <p id="modal-description"></p>
-      <div class="project-modal__meta" id="modal-tools"></div>
-      <strong id="modal-result"></strong>
-    </article>
-  </div>
-
-  <div class="image-modal" id="image-modal" aria-hidden="true">
-    <div class="image-modal__overlay" data-close-image></div>
-    <figure class="image-modal__content" role="dialog" aria-modal="true" aria-labelledby="image-modal-title">
-      <button class="image-modal__close" type="button" data-close-image aria-label="Fermer">x</button>
-      <img id="image-modal-img" src="" alt="">
-      <figcaption id="image-modal-title"></figcaption>
-    </figure>
-  </div>
 
   <script src="script.js"></script>
 </body>
